@@ -282,7 +282,7 @@ if os.path.exists('tablep.db'):
     # Open DB and load data to dict
     conn = sqlite3.connect('tablep.db')
     c = conn.cursor()
-    c.execute('SELECT * FROM elements ORDER BY elem_ID')
+    c.execute('SELECT * FROM elements ORDER BY elem_ID DESC')
     # comment the line above and uncomment below if you need to set SQL limit
     # c.execute('SELECT * FROM elements ORDER BY elem_ID DESC LIMIT 1024')
     result = ''
